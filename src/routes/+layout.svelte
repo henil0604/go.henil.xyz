@@ -8,7 +8,7 @@
 	import '../app.postcss';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import NavbarDrawer from '$lib/components/Drawer.Navbar.svelte';
-	import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
+	import { AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -26,6 +26,10 @@
 			<!-- (fallback contents) -->
 		{/if}
 	</Drawer>
-	<Navbar />
-	<slot />
+	<AppShell>
+		<svelte:fragment slot="header">
+			<Navbar />
+		</svelte:fragment>
+		<slot />
+	</AppShell>
 </FirebaseApp>

@@ -63,6 +63,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.0.1
     version: 3.3.2(postcss@8.4.23)(svelte@3.59.1)
+  svelte-use-form:
+    specifier: ^2.6.2
+    version: 2.6.2
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -2727,6 +2730,12 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.59.1
       typescript: 5.0.4
+    dev: true
+
+  /svelte-use-form@2.6.2:
+    resolution: {integrity: sha512-nPjhBTPwd5ZrHn38GVcnTlCi7dEwsVOsSmAFXOxMQpdLMMrjCJ3eAS4SrZ39zqIZU11/c3X5FQK4BvUC6Lai6A==}
+    dependencies:
+      svelte: 3.59.1
     dev: true
 
   /svelte@3.58.0:
